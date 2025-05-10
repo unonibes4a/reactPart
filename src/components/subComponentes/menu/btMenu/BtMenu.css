@@ -1,0 +1,78 @@
+.bt-label {
+    position: relative;
+    width: 100%;
+    min-height: 35px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    color: #868686;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.flex-rows-sp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cl-text-label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bt-label:hover{
+    color: #e9ddcd;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.cl_margin_menu_bt{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.margin-r{
+    margin-right: 0.7rem;
+}
+
+.tooltip-popup {
+    background-color: #27272a;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bt-label:hover .tooltip-popup {
+    display: flex;
+}
+
+.tooltip-text {
+    color: #a1a1aa;
+    white-space: nowrap;
+    font-size: 0.875rem;
+}
+
+.tooltip-arrow {
+    background-color: inherit;
+    transform: rotate(45deg);
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+}
+
+.tooltip-popup.tooltip-right {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 0.75rem;
+}
+
+.tooltip-popup.tooltip-right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
